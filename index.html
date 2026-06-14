@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Kroix Jones, an electrical engineering student building hardware, software, and music AI systems."
+    />
+    <title>Kroix Jones | Hardware, Software, Sound</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0c'/%3E%3Crect x='7' y='7' width='18' height='18' fill='%234f8ef7'/%3E%3Cpath d='M25 7 7 25h18z' fill='%23e8a838' fill-opacity='.8'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Kroix Jones home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Kroix Jones</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#krx-music">KRX Music</a>
+        <a href="#contact">Contact/Links</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section" aria-labelledby="hero-title">
+        <canvas id="chip-canvas" aria-hidden="true"></canvas>
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            Engineering hardware, software, and sound.
+            <em>into systems that matter.</em>
+          </h1>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+          <span></span>
+        </a>
+        <div class="hero-marquee" aria-label="Site sections">
+          <div class="marquee-track">
+            <div class="marquee-set">
+              <span>Home</span><span>Resume</span><span>Projects</span><span>KRX Music</span><span>About</span><span>Contact/Links</span>
+              <span>Home</span><span>Resume</span><span>Projects</span><span>KRX Music</span><span>About</span><span>Contact/Links</span>
+              <span>Home</span><span>Resume</span><span>Projects</span><span>KRX Music</span><span>About</span><span>Contact/Links</span>
+            </div>
+            <div class="marquee-set" aria-hidden="true">
+              <span>Home</span><span>Resume</span><span>Projects</span><span>KRX Music</span><span>About</span><span>Contact/Links</span>
+              <span>Home</span><span>Resume</span><span>Projects</span><span>KRX Music</span><span>About</span><span>Contact/Links</span>
+              <span>Home</span><span>Resume</span><span>Projects</span><span>KRX Music</span><span>About</span><span>Contact/Links</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="section-shell about-grid">
+          <div class="section-heading">
+            <p class="section-index">01 / About</p>
+            <h2 id="about-title">Building where hardware, software, and signal meet.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m Kroix Jones, an Electrical Engineering student at Howard University building systems
+              across RTL, embedded hardware, backend infrastructure, machine learning, and music technology.
+            </p>
+            <p>
+              Right now I’m a Hardware Systems Engineering Intern at Abbott, working near medical-device
+              PCBA and ASIC workflows while writing Go backend services and Python automation for
+              large-scale sensor analysis.
+            </p>
+            <div class="signal-panel">
+              <div>
+                <span class="mono-label">Current</span>
+                <strong>Hardware Systems Engineering Intern · Abbott</strong>
+              </div>
+              <div>
+                <span class="mono-label">Education</span>
+                <strong>Howard University · B.S. EE, Math minor · GPA 3.77 · May 2028</strong>
+              </div>
+              <div>
+                <span class="mono-label">Interests</span>
+                <strong>RTL design · ASIC verification · ML systems · embedded hardware · music technology</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section resume-section" aria-labelledby="resume-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="section-index">02 / Resume</p>
+              <h2 id="resume-title">Inline credentials.</h2>
+            </div>
+            <a class="text-button" href="./assets/Kroix_Jones_Resume.pdf" target="_blank" rel="noreferrer">
+              Download PDF
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
+              </svg>
+            </a>
+          </div>
+          <div class="resume-layout">
+            <div id="resume-content" class="resume-content"></div>
+            <aside class="resume-pdf-panel" aria-label="Resume PDF preview">
+              <div class="pdf-toolbar">
+                <span class="mono-label">PDF Preview</span>
+                <a href="./assets/Kroix_Jones_Resume.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+              </div>
+              <iframe
+                title="Kroix Jones resume PDF preview"
+                src="./assets/Kroix_Jones_Resume.pdf#toolbar=0&view=FitH"
+              ></iframe>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="section-index">03 / Projects</p>
+            <h2 id="projects-title">Systems that sense, compute, and adapt.</h2>
+          </div>
+          <div id="project-list" class="project-list"></div>
+        </div>
+      </section>
+
+      <section id="krx-music" class="section krx-section" aria-labelledby="krx-title">
+        <div class="section-shell krx-layout">
+          <div class="krx-copy">
+            <p class="section-index">04 / Crown Jewel</p>
+            <h2 id="krx-title">KRX Music</h2>
+            <p class="krx-tagline">
+              A research-driven music recommendation engine built to understand taste beyond genre.
+            </p>
+            <p>
+              KRX Music combines perceptual audio analysis, SBERT embeddings, vector similarity,
+              metadata-aware ranking, and Taste Neighborhoods to model how people actually discover music.
+              It is my core product project and the clearest expression of how I think about ML, systems,
+              and sound.
+            </p>
+            <div class="krx-actions" aria-label="KRX Music actions">
+              <span class="status-chip">Future site coming soon</span>
+              <a class="text-button" href="mailto:kroixjones@gmail.com?subject=KRX%20Music%20demo%20request">
+                Request demo
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m0 0-5-5m5 5-5 5" />
+                </svg>
+              </a>
+              <a
+                class="text-button beta-form-button"
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=BwysAl-3v0abEzYwupS7aexPezkqFHVFqJzUvK9i92BUN0hXQkMyNjg5QVZaQ0lNSEdBWkNTT1FWSi4u"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Private Beta interest form
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14m0 0-5-5m5 5-5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="krx-product krx-process" aria-label="KRX Music recommendation process model">
+            <canvas id="krx-process-canvas" aria-hidden="true"></canvas>
+            <div class="krx-stage">
+              <span class="mono-label krx-stage-index">01 / Audio Signal</span>
+              <strong class="krx-stage-title">Moving waveform enters KRX</strong>
+              <p class="krx-stage-copy">A song starts as pressure-wave motion, then becomes structured signal behavior.</p>
+            </div>
+            <div class="recommendation-card" aria-hidden="true">
+              <span class="mono-label">Generated Recommendation</span>
+              <div class="album-art"></div>
+              <strong>Glass Circuit</strong>
+              <p>NOVA LANE · spectral alt-R&B</p>
+              <span>Fits your catalog context with warm vocals and left-field texture.</span>
+            </div>
+            <div class="process-stepper" aria-label="KRX process stages">
+              <span aria-current="true">Wave</span>
+              <span>Hash</span>
+              <span>Vector</span>
+              <span>Fusion</span>
+              <span>Pool</span>
+              <span>Card</span>
+              <span>Rank</span>
+              <span>Learn</span>
+              <span>Graph</span>
+            </div>
+            <div class="krx-metrics">
+              <div>
+                <span class="mono-label">Build</span>
+                <strong>4 years</strong>
+              </div>
+              <div>
+                <span class="mono-label">Embedding Space</span>
+                <strong>384 dimensions</strong>
+              </div>
+              <div>
+                <span class="mono-label">Alpha</span>
+                <strong>100% relevance agreement</strong>
+              </div>
+              <div>
+                <span class="mono-label">Signal</span>
+                <strong>92% strongly agreed</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="krx-pipeline" aria-label="KRX Music recommendation pipeline">
+            <div>
+              <span class="mono-label">01 / Normalize + Analyze</span>
+              <strong>Waveform becomes time-frequency structure</strong>
+            </div>
+            <div>
+              <span class="mono-label">02 / Perceptual Hash</span>
+              <strong>Signal behavior compresses into binary-like fingerprints</strong>
+            </div>
+            <div>
+              <span class="mono-label">03 / Fusion Vector</span>
+              <strong>Audio, lyrics, metadata, and context become one song identity</strong>
+            </div>
+            <div>
+              <span class="mono-label">04 / Rank + Explain</span>
+              <strong>Relevance, novelty, confidence, and diversity choose the result</strong>
+            </div>
+            <div>
+              <span class="mono-label">05 / Feedback Loop</span>
+              <strong>Likes and skips reshape user-conditioned Taste Neighborhoods</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="section-shell contact-layout">
+          <div>
+            <p class="section-index">05 / Contact / Links</p>
+            <h2 id="contact-title">Let’s build <em>systems that matter.</em></h2>
+          </div>
+          <div class="contact-ledger">
+            <a href="mailto:kroixjones@gmail.com">
+              <span class="mono-label">Email</span>
+              <strong>kroixjones@gmail.com</strong>
+            </a>
+            <a href="https://www.linkedin.com/in/kroix-jones" target="_blank" rel="noreferrer">
+              <span class="mono-label">Professional</span>
+              <strong>LinkedIn</strong>
+            </a>
+            <a href="https://github.com/kroix-ovo" target="_blank" rel="noreferrer">
+              <span class="mono-label">Code</span>
+              <strong>GitHub</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Kroix Jones · Electrical Engineering · Hardware, software, and sound</span>
+      <nav aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#krx-music">KRX Music</a>
+      </nav>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
