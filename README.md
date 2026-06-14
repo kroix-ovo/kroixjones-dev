@@ -12,4 +12,9 @@ Then open `http://localhost:5173`.
 
 ## Deploy
 
-This is a static site. Deploy the repository root to Netlify, Vercel, GitHub Pages, or any static host.
+This is a static site deployed from the repository root with Cloudflare Pages.
+
+Production domains:
+
+- `https://kroixjones.dev`
+- `https://www.kroixjones.dev` redirects to `https://kroixjones.dev`
