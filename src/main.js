@@ -1,7 +1,9 @@
 import { initChipScene } from "./chipScene.js";
+import { initClockWaveBackground } from "./clockWaveBackground.js";
 import { featuredProjects, resume } from "./data.js";
 
 initChipScene("#chip-canvas");
+initClockWaveBackground("#clock-wave-background");
 renderResume();
 renderProjects();
 initAnchorNavigation();
